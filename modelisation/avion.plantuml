@@ -1,0 +1,10 @@
+@startuml
+!theme crt-amber
+class Avion {
+   carburant : int
+   nom : String
+   void decolle()
+   void vole()
+   void atterrit()
+}
+@enduml

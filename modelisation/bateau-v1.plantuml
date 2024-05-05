@@ -1,0 +1,9 @@
+@startuml
+class Bateau {
+   - String nom
+   + void prendLaMer()
+   + void navigue(double miles)
+   + void arriveAuPort()
+}
+
+@enduml

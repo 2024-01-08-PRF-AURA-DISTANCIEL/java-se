@@ -1,0 +1,13 @@
+@startuml
+class Bateau {
+
+   - static int nombreDeBateauxConstruits
+   - String nom
+   + void prendLaMer()
+   + void navigue(double miles)
+   + void arriveAuPort()
+   + String getNom()
+   + String setNom(String nom)
+}
+
+@enduml

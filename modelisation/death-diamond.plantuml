@@ -1,0 +1,13 @@
+@startuml
+!theme crt-amber
+abstract class Animal {
+   + void bouge()
+   + void mange(Nourriture nourriture)
+}
+class Fourmi extends Animal {
+   + maintientFourmiliere()
+}
+class Hérisson extends Animal {
+   + seMetEnBoule()
+}
+@enduml

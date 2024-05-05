@@ -1,0 +1,18 @@
+@startuml
+!theme crt-amber
+abstract class Animal {
+   + void bouge()
+   + void seReproduit()
+}
+class Mamifere extends Animal {
+   + nourritAvecMamelles()
+   + void seReproduit()
+}
+class Volant extends Animal {
+   + vole()
+   + void seReproduit()
+}
+class ChauveSouris extends Mamifere, Volant{
+   + utiliseUltrasons()
+}
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+class Bateau {
+
+   - static int nombreDeBateauxConstruits
+   - final String nom
+   - Coque coque
+   + static int getNombreDeBateauxConstruits()
+   + Bateau(String nom)
+   + void prendLaMer()
+   + void navigue(double miles)
+   + void arriveAuPort()
+   + String getNom()
+   + Coque getCoque()
+   + void setCoque(Coque coque)
+   
+   
+}
+
+class Coque {
+	- int pointsDeVie
+	- int pointsDeVieMax
+	+ Coque(int pointsDeVieMax)
+}
+Bateau -> Coque
+@enduml
