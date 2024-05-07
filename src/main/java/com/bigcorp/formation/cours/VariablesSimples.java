@@ -95,7 +95,34 @@ public class VariablesSimples {
 		//Ci-dessous, code qui compile, mais peu lisible, donc à éviter
 		int vitesseBateau = (voilierEnBonEtat && grandVent) || bonMoteur 
 					? (isCapitaineMajeur ? 15:10) : 5;
-
+		
+		int tailleDuBateau = 3;
+		tailleDuBateau = tailleDuBateau + 1;
+		tailleDuBateau += 1;
+		tailleDuBateau++;
+		++tailleDuBateau;
+		System.out.println("Taille du bateau");
+		System.out.println(tailleDuBateau);
+		
+		System.out.println("Taille du bateau avec pré incrémentation (incrémente de 7 à 8 puis renvoie 8)");
+		System.out.println(++tailleDuBateau);
+		
+		System.out.println("Taille du bateau avec post incrémentation (renvoie 8 puis incrémente de 8 à 9)");
+		System.out.println(tailleDuBateau++);
+		
+		System.out.println("Taille du bateau (ré affichage)");
+		System.out.println(tailleDuBateau);
+		
+		tailleDuBateau = tailleDuBateau * 2;
+		tailleDuBateau *= 2;
+		
+		
+		tailleDuBateau = tailleDuBateau - 2;
+		
+		tailleDuBateau = tailleDuBateau - 1;
+		tailleDuBateau--;
+		--tailleDuBateau;
+		
 	}
 
 }
