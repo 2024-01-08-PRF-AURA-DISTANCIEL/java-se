@@ -22,11 +22,12 @@ public class Conversions {
     	int grandeValeur = petiteValeur;
     	
     	//Conversion d'un int en short
-    	int autreGrandeValeur = 2_333_000;
+    	int autreGrandeValeur = 422_333_000;
+    	
     	short autrePetiteValeur = (short) autreGrandeValeur;
     	System.out.println("Autre petite valeur");
     	System.out.println(autrePetiteValeur);
-
+    	
     }
     
    

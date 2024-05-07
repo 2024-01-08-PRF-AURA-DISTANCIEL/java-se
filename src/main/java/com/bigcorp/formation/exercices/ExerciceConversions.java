@@ -8,7 +8,6 @@ public class ExerciceConversions {
     	
     	
     	//Conversion d'un int en short
-    	
      
     }
 }
