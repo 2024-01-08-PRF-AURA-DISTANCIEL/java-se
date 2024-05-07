@@ -29,7 +29,7 @@ public class VariablesSimples {
 		System.out.println(condition);
 
 		// Affectation multiple
-		int a,b,c;
+		int a, b, c;
 		a = b = c = 3;
 
 		// Operateur arithmetique simple avec définition
@@ -49,12 +49,53 @@ public class VariablesSimples {
 		System.out.println(somme);
 
 		// Operateur binaire
+		boolean isTrue = false;
 
 		// Operateur de comparaison logique
+		int ageCapitaine = 19;
+		boolean isCapitaineMajeur = ageCapitaine > 18;
+		System.out.println("Capitaine majeur ");
+		System.out.println(isCapitaineMajeur);
 
 		// Operateur de negation
+		boolean isCapitaineMineur = !isCapitaineMajeur;
+		System.out.println("Capitaine mineur ");
+		System.out.println(isCapitaineMineur);
 
+		boolean isBateauEnBonEtat = true;
+		boolean bateauPeutPartir = isCapitaineMajeur && isBateauEnBonEtat;
+		System.out.println("Le bateau peut partir ");
+		System.out.println(bateauPeutPartir);
+
+		boolean avarieBateau = false;
+		boolean coqueUsee = true;
+		boolean operationDeMaintenanceNecessaire = avarieBateau || coqueUsee;
+		System.out.println("Une opération de maintenance est nécessaire");
+		System.out.println(operationDeMaintenanceNecessaire);
+
+		boolean bonMoteur = false;
+		boolean bonneVoile = true;
+		boolean cordageAbime = true;
+		boolean bonMat = false;
+		boolean voilierEnBonEtat = (bonMat && !cordageAbime);
+		boolean bateauDeCompetition = isCapitaineMajeur && (bonMoteur || voilierEnBonEtat);
+		
 		// L'opérateur ternaire
+		int payeDuCapitaine = isCapitaineMajeur ? 10_000 : 5_000;
+		//Le code ci-dessus est équivalent à celui ci-dessous
+		if(isCapitaineMajeur) {
+			payeDuCapitaine = 10_000;
+		}else {
+			payeDuCapitaine = 5_000;
+		}
+		
+		boolean grandVent = false;
+		System.out.println("Paye du capitaine");
+		
+		//Ci-dessous, code qui compile, mais peu lisible, donc à éviter
+		int vitesseBateau = (voilierEnBonEtat && grandVent) || bonMoteur 
+					? (isCapitaineMajeur ? 15:10) : 5;
 
 	}
+
 }
