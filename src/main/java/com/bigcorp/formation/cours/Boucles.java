@@ -7,7 +7,7 @@ public class Boucles {
 	public static void main(String[] args) {
 		// Boucle for
 		System.out.println("\r\n boucle for");
-		for (int i = 1; i < 4; i++) {
+		for (int i = 1; i < 4_000; i++) {
 			System.out.println(i);
 		}
 

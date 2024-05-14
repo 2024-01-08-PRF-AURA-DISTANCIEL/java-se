@@ -1,5 +1,7 @@
 package com.bigcorp.formation.cours.avion;
 
+import com.bigcorp.formation.cours.avion.transport.AvionDeTransport;
+
 public class Aeroport {
 
 	public static void main(String[] args) {
@@ -26,6 +28,22 @@ public class Aeroport {
 		System.out.println("Le compteur d'avion vaut : ");
 		System.out.println(Avion.compteurDAvions);
 		
+		AvionMilitaire avionMilitaire = new AvionMilitaire("Jet");
+		avionMilitaire.getNomDeCode();
+		
+		System.out.println("Vérification de capacité pour un avion de transport : ");
+		AvionDeTransport avionDeTransport = new AvionDeTransport("Avion de transport", 30);
+		avionDeTransport.verifierCapacite();
+		avionDeTransport.verifierCapacite(3);
+		
+		System.out.println("Vérification de capacité pour un avion de base : ");
+		avion2.verifierCapacite();
+		afficheAvion(avion2);
+		afficheAvion(avionDeTransport);
+	}
+	
+	public static void afficheAvion(Avion avion) {
+		avion.getNom();
 	}
 	
 }

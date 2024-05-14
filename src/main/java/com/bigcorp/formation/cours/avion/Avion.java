@@ -18,12 +18,12 @@ public class Avion {
 	// Le nom est devenu immutable grâce à final,
 	// il ne pourra plus être modifié après la construction
 	// de l'objet
-	private final String nom;
+	protected final String nom;
 	protected int capacitePassagers;
 	String nomCompagnie;
-	private int carburant;
+	protected int carburant;
 	private int capaciteCarburant = 10_000;
-
+	
 	/**
 	 * Constructeur avec un argument. La création de ce constructeur a supprimé le
 	 * constructeur par défaut , qui n'a pas d'arguments.
@@ -33,6 +33,7 @@ public class Avion {
 	public Avion(String nom) {
 		compteurDAvions++;
 		this.nom = nom;
+		System.out.println("Je suis en train de construire un avion");
 	}
 
 	/**
@@ -68,7 +69,14 @@ public class Avion {
 		this.capacitePassagers = capacitePassagers;
 	}
 
-	
+	protected boolean verifierNom() {
+		return this.nom != null;
+	}
+
+	protected boolean verifierCapacite() {
+		System.out.println("Je vérifie la capacité, comme un avion simple");
+		return this.capacitePassagers > 0;
+	}
 	
 	/**
 	 * Met à jour le carburant à sa capacité max.
