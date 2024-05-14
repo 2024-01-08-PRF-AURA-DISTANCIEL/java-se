@@ -5,6 +5,7 @@ public class Aeroport {
 	public static void main(String[] args) {
 		Avion avion1 = null;
 		avion1 = new Avion("Super avion");
+		
 		avion1.faireLePlein();
 		System.out.println("La valeur du carburant de l'avion");
 		System.out.println(avion1.getCarburant());
@@ -24,9 +25,7 @@ public class Aeroport {
 		
 		System.out.println("Le compteur d'avion vaut : ");
 		System.out.println(Avion.compteurDAvions);
-		System.out.println(avion1.compteurDAvions);
-		System.out.println(avion2.compteurDAvions);
 		
 	}
-
+	
 }

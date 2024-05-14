@@ -1,5 +1,6 @@
 package com.bigcorp.formation.cours.avion;
 
+
 /**
  * Classe simulant un avion
  */
@@ -8,6 +9,9 @@ public class Avion {
 	// Compteur d'avions construits par la classe, statique
 	// propre à la classe et partagé par toutes les instances
 	public static int compteurDAvions;
+	
+	//Poids en kilos
+	public static final int POIDS_MAX_AVION = 13_000_000;
 
 	// attributs liés aux instances
 
@@ -39,6 +43,12 @@ public class Avion {
 	public String getNom() {
 		return nom;
 	}
+	
+	public void castNom() {
+		String uneAutreVariable = nom;
+		String uneAutreString = (String) nom;
+	}
+	
 
 	/**
 	 * Setter, ou accesseur en lecture de carburant, généré par l'IDE, normalement sans Javadoc
