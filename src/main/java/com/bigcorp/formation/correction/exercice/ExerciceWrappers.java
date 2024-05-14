@@ -16,9 +16,6 @@ public class ExerciceWrappers {
 		//Passage de ce int en Integer 
 		Integer quaranteCinqAsInteger = quaranteCinq;
 		
-		
-		
-		
 
 	}
 }
