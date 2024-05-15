@@ -2,6 +2,7 @@ package com.bigcorp.formation.cours.avion.transport;
 
 import com.bigcorp.formation.cours.avion.Avion;
 
+
 public class AvionDeTransport extends Avion {
 
 	private int capaciteTonnes;
@@ -22,6 +23,9 @@ public class AvionDeTransport extends Avion {
 		verifierCapacite();
 	}
 
+	/**
+	 * Cette méthode vérifie la capacité de l'avion.
+	 */
 	@Override
 	public boolean verifierCapacite() {
 		System.out.println("Je vérifie la capacité, comme un avion de transport");
