@@ -26,6 +26,12 @@ public abstract class Dinosaure {
 		this.nom = nom;
 		this.masse = masse;
 	}
+	
+	public Dinosaure(String nom, double masse) {
+		this.vivant = true;
+		this.nom = nom;
+		this.masse = masse;
+	}
 
 	/**
 	 * Méthode abstraite : les classes filles DEVRONT
