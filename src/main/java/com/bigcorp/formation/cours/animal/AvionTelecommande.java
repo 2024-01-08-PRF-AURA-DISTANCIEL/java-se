@@ -8,7 +8,6 @@ public class AvionTelecommande implements Volant {
 	@Override
 	public void vole() {
 		System.out.println("Brrrt");
-
 	}
 
 }

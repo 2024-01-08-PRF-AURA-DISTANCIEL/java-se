@@ -1,5 +1,8 @@
 package com.bigcorp.formation.cours.dinosaure;
-
+/**
+ * Un Tyrannosaurus est un dinosaure.
+ * Il a une forceAttaque et se comporte d'une certaine manière au combat.
+ */
 public class Tyrannosaurus extends Dinosaure {
 
 	private int forceAttaque;
@@ -9,6 +12,14 @@ public class Tyrannosaurus extends Dinosaure {
 		this.forceAttaque = forceAttaque;
 	}
 
+	/**
+	 * Ici, on utilise le polymorphisme : attaque permet
+	 * d'attaquer tout type de Dinosaure. De plus, on peut
+	 * accéder aux attributs protected de Dinosaure, puisque 
+	 * l'on est dans une classe fille de Dinosaure.
+	 * On utilise aussi des instanceof et des casts pour 
+	 * écrire du code dépendant du type réel du Dinosaure attaqué.
+	 */
 	@Override
 	public void attaque(Dinosaure autre) {
 		System.out.println("Le dinosaure : "+ this.nom + " attaque : " + autre.nom);
