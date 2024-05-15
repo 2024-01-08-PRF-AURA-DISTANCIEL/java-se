@@ -15,7 +15,6 @@ public class ExerciceList {
 		// Suppression d'un élément à un certain index
 
 		// Affichage de la liste (parcours de chaque élément)
-		
 
 	}
 
