@@ -13,6 +13,7 @@ public class ExerciceMap {
         //Affichage d'une définition d'un mot
         
         //Affichage de chaque définition avec sa clé et sa valeur
+    	// (itérez sur les clés)....
         
         // Suppression d'un élément de la map
         
