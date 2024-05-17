@@ -15,6 +15,7 @@ public class Streams {
 	superList.add("gens");
 	superList.add("super");
 	superList.add("youpi");
+	
 	//Création d'une classe implémentant Comparator pour trier
 	
 	
