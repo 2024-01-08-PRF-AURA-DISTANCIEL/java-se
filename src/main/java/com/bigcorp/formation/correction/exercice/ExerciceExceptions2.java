@@ -16,13 +16,16 @@ import java.util.Scanner;
 public class ExerciceExceptions2 {
 	public static void main(String[] args) {
 		try {
-		System.out.println("Le résultat est : " + recuperationDonneesEtLanceCalcul());
+			System.out.println("Le résultat est : " + recuperationDonneesEtLanceCalcul());
 		}catch(Exception e) {
 			System.out.println("Bon, hé bien, ça n'a pas marché, la cause est : " + e.getMessage());
+			System.out.println("La pile d'appels est : ");
+			e.printStackTrace();
+			System.out.println("Veuillez contacter votre administrateur avec le message ci-dessus pour résoudre le problème");
 		}
 	}
 
-	public static int recuperationDonneesEtLanceCalcul() {
+	public static int recuperationDonneesEtLanceCalcul()  {
 		// Récupération de deux variables a et b
 		Scanner scannerClavier = new Scanner(System.in);
 		System.out.println("Veuillez entrer un entier a");
@@ -39,11 +42,11 @@ public class ExerciceExceptions2 {
 		return resultat;
 	}
 
-	public static int lanceCalcul(int a, int b) {
+	public static int lanceCalcul(int a, int b)  {
 		return lanceCalculPourDeVrai(a,b);
 	}
 
-	public static int lanceCalculPourDeVrai(int a, int b) {
+	public static int lanceCalculPourDeVrai(int a, int b)  {
 		prepareCalcul();
 		return a + b;
 	}
@@ -52,7 +55,7 @@ public class ExerciceExceptions2 {
 	 * Prepare le calcul
 	 * @throws CalculRuntimeException
 	 */
-	public static void prepareCalcul() throws CalculRuntimeException{
+	public static void prepareCalcul() {
 		throw new CalculRuntimeException("Une erreur est survenue");
 	}
 

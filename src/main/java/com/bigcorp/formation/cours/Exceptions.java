@@ -33,7 +33,6 @@ public class Exceptions {
 			System.out.println("Une erreur d'entrée/sortie s'est produite : " + e.getMessage());
 		}
 
-
 	}
 
 	/**

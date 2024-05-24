@@ -18,6 +18,28 @@ public class JungleDinosaures {
 		System.out.println("Louloute est vivante ? :" + louloute.isVivant());
 		System.out.println("Titi est vivant ? :" + titi.isVivant());
 		System.out.println("Toto est vivant ? :" + toto.isVivant());
+		
+		ResumeDinosaure resumeChouchou = new ResumeDinosaure(chouchou.getNom(), chouchou.isVivant());
+		afficheResume(resumeChouchou);
+		
+		ResumeDinosaureAvecRecord resumeChouchourecord =
+				new ResumeDinosaureAvecRecord(chouchou.getNom(), chouchou.isVivant());
+		afficheResumeVersionRecord(resumeChouchourecord);
+	}
+	
+	public static void afficheResume(ResumeDinosaure resumeDinosaure) {
+		System.out.println("J'affiche un résumé");
+		System.out.println("Le dinosaure s'appelle : " 
+					+ resumeDinosaure.getNom() 
+					+ " et il est " + (resumeDinosaure.isVivant() ? "vivant":"mort"));
+	}
+	
+	public static void afficheResumeVersionRecord(ResumeDinosaureAvecRecord resumeDinosaureAvecRecord) {
+		System.out.println("J'affiche un résumé, grâce au record");
+		System.out.println("Le dinosaure s'appelle : " 
+					+ resumeDinosaureAvecRecord.nom()
+					+ " et il est " + (resumeDinosaureAvecRecord.isVivant() ? "vivant":"mort"));
+		System.out.println(resumeDinosaureAvecRecord);
 	}
 
 }

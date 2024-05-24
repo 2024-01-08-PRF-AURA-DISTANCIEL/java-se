@@ -14,19 +14,20 @@ import com.bigcorp.formation.exercices.CalculException;
 
 // Classe principale
 public class ExerciceExceptions {
-	public static void main(String[] args) {
+	public static void main(String[] args)  {
 		int resultat = 0;
 		try {
 			resultat = calcule(4, 5);
 			System.out.println("Le résultat est : " + resultat);
 		} catch (CalculException e) {
 			System.out.println("Impossible de calculer le résultat : " + e.getMessage());
-		}	
+		}
+		System.out.println("Je lance un autre calcul qui n'a rien à voir.");
 	}
 
 	
 	public static int calcule(int a, int b) throws CalculException{
-		throw new CalculException("Une erreur est survenue");
+		throw new CalculException("Une autre erreur est survenue");			
 	}
 
 }

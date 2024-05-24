@@ -12,6 +12,7 @@ public abstract class Dinosaure {
 	protected String nom;
 	// Masse en kilos
 	protected double masse;
+	protected Regime regime;
 	
 	/**
 	 * Constructeur de dinosaure. Ne sera jamais appelé directement
